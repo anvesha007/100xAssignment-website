@@ -4,9 +4,11 @@ const cors = require("cors");
 const postModel=require("./models/model.schema");
 app.use(express.json());
 //const rateLimit = require("express-rate-limit");
-
+//https://100x-assignment-website.vercel.app/
 app.use(cors({
-    origin: "http://localhost:5173", // Vite frontend
+    origin: ["http://localhost:5173",
+      "https://100x-assignment-website.vercel.app/"  
+    ],
     methods: ["GET", "POST", "DELETE"],
     allowedHeaders: ["Content-Type", "password"]
 }));
