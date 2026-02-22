@@ -7,7 +7,7 @@ app.use(express.json());
 //https://100x-assignment-website.vercel.app/
 app.use(cors({
     origin: ["http://localhost:5173",
-      "https://100x-assignment-website.vercel.app/"  
+      "https://100x-assignment-website.vercel.app"  
     ],
     methods: ["GET", "POST", "DELETE"],
     allowedHeaders: ["Content-Type", "password"]
