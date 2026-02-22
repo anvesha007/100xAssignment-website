@@ -12,6 +12,7 @@ app.use(cors({
     methods: ["GET", "POST", "DELETE"],
     allowedHeaders: ["Content-Type", "password"]
 }));
+app.options("*", cors());
 
 // const passwordLimiter = rateLimit({
 //     windowMs: 1 * 60 * 1000, // 1 minutes
