@@ -5,7 +5,7 @@ import TopicCard from "./components/TopicCard";
 
 import logo from "./assets/logo.png";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://one00xassignment-website.onrender.com";
 
 function App() {
   const [topics, setTopics] = useState([]);
